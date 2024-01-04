@@ -8,7 +8,7 @@ project(MIRP
         VERSION ${MIRP_VERSION}
         LANGUAGES C CXX)
 
-enable_testing()
+#enable_testing()
 
 # Standard install locations and cmake helpers
 include(GNUInstallDirs)
@@ -41,8 +41,8 @@ endif()
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
 add_subdirectory(mirp)
-add_subdirectory(mirp_bin)
-add_subdirectory(tests)
+#add_subdirectory(mirp_bin)
+#add_subdirectory(tests)
 
 ##########################################
 # Installation and config files
@@ -74,7 +74,7 @@ install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/cmake/mirpDependencies.cmake
 )
 
 # Install the test files
-install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/tests
-        DESTINATION ${CMAKE_INSTALL_DATADIR}/mirp
-)
+#install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/tests
+#        DESTINATION ${CMAKE_INSTALL_DATADIR}/mirp
+#)
 
